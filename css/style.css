@@ -198,4 +198,7 @@ span {
 .last-wish {
 	padding-top: 20px;
 	font-size: 20px;
+	margin: auto;
+	max-width: 1024px;
+	min-width: 430px;
 }
