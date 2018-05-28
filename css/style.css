@@ -27,7 +27,8 @@ h1 {
 	min-width: 430px;
 }
 .earth,
-.hyperion {
+.hyperion,
+.korhal {
 	font-size: 0;
 	margin: auto;
 	border: 3px solid #ffffff;
@@ -36,14 +37,16 @@ h1 {
 }
 
 .earth li,
-.hyperion li {
+.hyperion li,
+.korhal li {
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
 	border: 3px solid #ffffff;
 }
 
-.hyperion {
+.hyperion,
+.korhal {
 	margin-top: 20px;
 }
 
@@ -55,13 +58,23 @@ li:first-child {
 	padding: 20px;
 }
 
-.planet-name:after {
+.planet-name-two:after {
 	content: "";
 	display: inline-block;
 	vertical-align: bottom;
 	width: 60px;
 	height: 60px;
 	background-image: url('../img/Team-hyperion.png');
+	background-size: 60px;
+}
+
+.planet-name-three:after {
+	content: "";
+	display: inline-block;
+	vertical-align: bottom;
+	width: 60px;
+	height: 60px;
+	background-image: url('../img/Flag_of_Sons_of_Korhal.png');
 	background-size: 60px;
 }
 
@@ -89,19 +102,50 @@ li:first-child {
 }
 
 .hyperion>.city:nth-child(2) {
-	background-color: #D13737;
-	width: 40%;
+	background-color: #0f6bff;
+	width: 25%;
 }
 
 .hyperion>.city:nth-child(3) {
-	background-color: #FFA02E;
-	width: 30%;
+	background-color: #36B700;
+	width: 25%;
 }
 
 .hyperion>.city:nth-child(4) {
-	background-color: #36B700;
-	width: 30%;
+	background-color: #FFA02E;
+	width: 25%;
 }
+
+.hyperion>.city:nth-child(5) {
+	padding-top: 40px;
+	background-color: #D13737;
+	width: 25%;
+	background-image: url(../img/The-Shrike.png);
+	background-size: 220px;
+	background-position: center;
+}
+
+.korhal>.city:nth-child(2) {
+	background-color: #ed6724;
+	width: 25%;
+}
+
+.korhal>.city:nth-child(3) {
+	background-color: #36B700;
+	width: 25%;
+}
+
+.korhal>.city:nth-child(4) {
+	text-align: left;
+	padding-left: 30px;
+	background-color: #8f1fa8;
+	width: 50%;
+	background-image: url(../img/zergi.gif);
+	background-size: 220px;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
 
 span {
 	line-height: 2.3;
@@ -122,15 +166,36 @@ span {
 }
 
 .hyperion:hover {
+	background-color: rgba(255,165,30,0.7);
+}
+
+.korhal:hover {
 	background-color: rgba(209,55,55,0.7);
 }
 
 .earth:hover>.city,
-.hyperion:hover>.city {
+.hyperion:hover>.city,
+.korhal:hover>.city {
 	opacity: 0.6;
 }
 
 .earth>.city:hover,
-.hyperion>.city:hover  {
+.hyperion>.city:hover,
+.korhal>.city:hover  {
 	opacity: 1;
+}
+
+.shryke {
+	display: none;
+	background-color: rgba(255,255,255,0.7);
+	padding: 10px;
+}
+
+.hyperion>.city:hover .shryke  {
+	display: block;
+}
+
+.last-wish {
+	padding-top: 20px;
+	font-size: 20px;
 }
