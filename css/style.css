@@ -1,10 +1,10 @@
 * {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    transition: all .1s ease-in;
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+			box-sizing: border-box;
+	transition: all .1s ease-in;
 }
 
 html {
@@ -26,6 +26,7 @@ h1 {
 	text-align: center;
 	min-width: 430px;
 }
+
 .earth,
 .hyperion,
 .korhal {
@@ -58,23 +59,23 @@ li:first-child {
 	padding: 20px;
 }
 
-.planet-name-two:after {
+.planet-name-two::after {
 	content: "";
 	display: inline-block;
 	vertical-align: bottom;
 	width: 60px;
 	height: 60px;
-	background-image: url('../img/Team-hyperion.png');
+	background-image: url("../img/Team-hyperion.png");
 	background-size: 60px;
 }
 
-.planet-name-three:after {
+.planet-name-three::after {
 	content: "";
 	display: inline-block;
 	vertical-align: bottom;
 	width: 60px;
 	height: 60px;
-	background-image: url('../img/Flag_of_Sons_of_Korhal.png');
+	background-image: url("../img/Flag_of_Sons_of_Korhal.png");
 	background-size: 60px;
 }
 
@@ -86,56 +87,56 @@ li:first-child {
 	padding-top: 31px;
 }
 
-.earth>.city:nth-child(2) {
+.earth > .city:nth-child(2) {
 	background-color: #339966;
 	width: 32%;
 }
 
-.earth>.city:nth-child(3) {
+.earth > .city:nth-child(3) {
 	background-color: #666699;
 	width: 32%;
 }
 
-.earth>.city:nth-child(4) {
+.earth > .city:nth-child(4) {
 	background-color: #33CCCC;
 	width: 36%;
 }
 
-.hyperion>.city:nth-child(2) {
+.hyperion > .city:nth-child(2) {
 	background-color: #0f6bff;
 	width: 25%;
 }
 
-.hyperion>.city:nth-child(3) {
+.hyperion > .city:nth-child(3) {
 	background-color: #36B700;
 	width: 25%;
 }
 
-.hyperion>.city:nth-child(4) {
+.hyperion > .city:nth-child(4) {
 	background-color: #FFA02E;
 	width: 25%;
 }
 
-.hyperion>.city:nth-child(5) {
+.hyperion > .city:nth-child(5) {
 	padding-top: 40px;
 	background-color: #D13737;
 	width: 25%;
-	background-image: url(../img/The-Shrike.png);
+	background-image: url("../img/The-Shrike.png");
 	background-size: 220px;
 	background-position: center;
 }
 
-.korhal>.city:nth-child(2) {
+.korhal > .city:nth-child(2) {
 	background-color: #ed6724;
 	width: 25%;
 }
 
-.korhal>.city:nth-child(3) {
+.korhal > .city:nth-child(3) {
 	background-color: #36B700;
 	width: 25%;
 }
 
-.korhal>.city:nth-child(4) {
+.korhal > .city:nth-child(4) {
 	text-align: left;
 	padding-left: 30px;
 	background-color: #8f1fa8;
@@ -146,7 +147,6 @@ li:first-child {
 	background-repeat: no-repeat;
 }
 
-
 span {
 	line-height: 2.3;
 	color: #ffffff;
@@ -156,42 +156,42 @@ span {
 
 .wi {
 	padding-left: 7px;
-	color: rgba(255,255,255,0.8);
+	color: rgba(255, 255, 255, 0.8);
 	font-size: 30px;
 	font-weight: 800;
 }
 
 .earth:hover {
-	background-color: rgba(240,216,0,0.7);
+	background-color: rgba(240, 216, 0, 0.7);
 }
 
 .hyperion:hover {
-	background-color: rgba(255,165,30,0.7);
+	background-color: rgba(255, 165, 30, 0.7);
 }
 
 .korhal:hover {
-	background-color: rgba(209,55,55,0.7);
+	background-color: rgba(209, 55, 55, 0.7);
 }
 
-.earth:hover>.city,
-.hyperion:hover>.city,
-.korhal:hover>.city {
+.earth:hover > .city,
+.hyperion:hover > .city,
+.korhal:hover > .city {
 	opacity: 0.6;
 }
 
-.earth>.city:hover,
-.hyperion>.city:hover,
-.korhal>.city:hover  {
+.earth > .city:hover,
+.hyperion > .city:hover,
+.korhal > .city:hover  {
 	opacity: 1;
 }
 
 .shryke {
 	display: none;
-	background-color: rgba(255,255,255,0.7);
+	background-color: rgba(255, 255, 255, 0.7);
 	padding: 10px;
 }
 
-.hyperion>.city:hover .shryke  {
+.hyperion > .city:hover .shryke  {
 	display: block;
 }
 
